@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(197, 185, 185);
+}
+
+header {
+  position: relative;
+}
+
+.navMeny {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: 2%;
+  left: 3%;
+  right: 3%;
+  justify-content: space-evenly;
+  list-style: none;
+  border-bottom: 1px solid white;
+  padding: 1%;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navMeny a {
+  color: grey;
+  border-color: 5px 5px 7px #7b7d80, -5px -5px 7px white;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  font-size: x-large;
+  text-decoration-line: none;
+}
+
+.navMeny a:hover {
+  color: black;
+  padding: 0 1rem;
+  border-bottom: 3px solid white;
+  
+}
+
+.tree-img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20% 0 30% 0;
+  z-index: 1;
+  width: 100%;
+  height: 700px;
+}
+
+.projekt-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-items: center;
+  align-items: center;
+  gap: 400px;
+
+}
+
+.projekt-container img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.top-left {
+  grid-column: 1;
+  grid-row: 1;
+  transform: translate(20px, -100px); 
+}
+
+.top-right {
+  grid-column: 2;
+  grid-row: 1;
+  transform: translate(0px, -100px); 
+}
+
+.bottom-left {
+  grid-column: 1;
+  grid-row: 2;
+  transform: translate(20px, -250px); 
+}
+
+.bottom-right {
+  grid-column: 2;
+  grid-row: 2;
+  transform: translate(0px, -250px); 
+}
+
+.projekt-container figcaption {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: rgb(208, 207, 208);
+  height: auto;
+  margin: 0;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  
+}
+
+.footer-container .kontakt ul {
+  list-style: none;
+}
+
+.kontakt i {
+  margin: 0.3rem 1rem;
+}
+
+.kontakt a {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.5s ease;
+  display: inline-block;
+}
+
+.kontakt a:hover {
+  transform: translateX(5px);
+}
+
+.socialMedia ul {
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.socialMedia li {
+  margin-right: 20px;
+}
+
+
+.socialMedia i {
+  font-size: 50px;
+  transition: transform 0.3s ease;
+}
+
+.socialMedia i:hover {
+  transform: scale(1.1);
+}
+
+.footer hr {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.bottom-line {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2%;
+}
+
+#Tuc-logo {
+  height: 25px;
+  width: auto;
+}
