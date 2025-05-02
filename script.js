@@ -36,3 +36,12 @@ document.getElementById("scrollRight").addEventListener("click", function () {
     behavior: "smooth"
   });
 });
+
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const navMeny = document.querySelector('.navMeny');
+
+menuToggle.addEventListener('click', () => {
+  navMeny.classList.toggle('show');
+});

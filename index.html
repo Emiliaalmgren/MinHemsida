@@ -10,17 +10,21 @@
 <body>
   <header>
     <div>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <ul class="navMeny">
-        <li><a href="index.html">HEM</a></li>
-        <li><a href="#section-aboutme">OM MIG</a></li>
-        <li><a href="#project-section">MINA PROJEKT</a></li>
-        <li><a href="/kod-html/hem/Index.html" target="_blank">GRUPPROJEKT GOLFKLUBB</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#section-aboutme">ABOUT ME</a></li>
+        <li><a href="#project-section">MY PROJECTS</a></li>
+        <li><a href="/kod-html/hem/Index.html" target="_blank">GROUP-PROJECT GOLFCLUB</a></li>
       </ul>
     </div>
 
-    <div class="welcomeText">
-      <h1 id="slide-in-text">Hi, I am Emilia Almgren</h1>
-      <p>Im in the beginning of my journey, climbing that montain. When I've reached the top, nothing will look as good as then. I'am courious about that journey.
+    <div class="welcomeText" id="slide-in-text">
+      <h1>Welcome to Emilia Almgrens portfolio</h1>
+      <p>On a journey to master the art of web development, one project at a time.
+        I create with imagination, build with dedication, and code with heart.
       </p>
     </div>
 
@@ -39,7 +43,7 @@
   </header>
   <main>
 
-    <div class="welcometext-background">
+    <div class="about-me-section">
       <div class="welcome-text">
         <h1 id="section-aboutme">Welcome to my portfolio</h1>
         <p>An aspiring web developer located in Stockholm currently honing my skills and 
@@ -75,7 +79,7 @@
             <img src="picture/html_logo.png" alt="HTML_picture">
             <a href="#" class="toggle"><figcaption>HTML <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
               <div class="content" class="hidden">
-                <p>Här är lite infotext som visas som dropdown</p>
+                <p>I have strong skills in HTML and have completed a course in HTML and CSS. During the course, I worked on various projects, including a group project where we created a website for a golf club. This experience helped me strengthen both my technical abilities and my teamwork skills.</p>
               </div>
           </figure>
 
@@ -83,7 +87,7 @@
             <img src="picture/CSS_logo.png" alt="CSS_picture">
             <a href="#" class="toggle"><figcaption>CSS <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
               <div class="content" class="hidden">
-                <p>Här är lite infotext som visas som dropdown</p>
+                <p>CSS plays a key role in shaping the design and visual appearance of a website, something I find very enjoyable and inspiring. Throughout the course, we worked extensively with CSS, and I have gained strong knowledge and practical experience in using it to create attractive, functional web pages. It fascinates me how CSS constantly surprises me with its versatility and the endless possibilities it offers for building and designing content. </p>
               </div>
           </figure>
 
@@ -91,15 +95,15 @@
             <img src="picture/cSharp_logo.png" alt="C#_programming" id="csharp-logo">
             <a href="#" class="toggle"><figcaption>Programming C# <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
               <div class="content" class="hidden">
-                <p>Här är lite infotext som visas som dropdown</p>
+                <p>I have completed both an introductory and an advanced course in C# over a period of four months. During this time, I developed a solid understanding of C# programming and its applications. As part of a group project, we expanded our previous golf club website and transformed it into a fully functional e-commerce platform, implementing key features such as user registration, product management, and checkout.</p>
               </div>
           </figure>
 
           <figure>
-            <img src="picture/javascript_logo.png" alt="Javascript_picture" id="js-logo">
+            <img src="picture/javascript-fixad.webp" alt="Javascript_picture" id="js-logo">
             <a href="#" class="toggle"><figcaption>Javascript <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
               <div class="content" class="hidden">
-                <p>Här är lite infotext som visas som dropdown</p>
+                <p>I have completed an introductory course in JavaScript, where I learned the basics of making websites interactive and dynamic. During the course, we practiced adding functionality to web pages, such as building a memory game and implementing features like adding products to a shopping cart. This gave me a strong foundation in using JavaScript to enhance the user experience.</p>
               </div>
           </figure>
 
@@ -107,7 +111,7 @@
             <img src="picture/database.png" alt="Database_picture" id="sql-logo">
             <a href="#" class="toggle"><figcaption>SQL <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
               <div class="content" class="hidden">
-                <p>Här är lite infotext som visas som dropdown</p>
+                <p>As part of our group project, we worked on connecting our e-commerce platform to a SQL database, enabling dynamic functionality such as managing products, users, and orders. This experience sparked a strong interest in database management for me, and I really enjoy working with databases to create more powerful and flexible applications.</p>
               </div>
           </figure>
 
@@ -115,21 +119,21 @@
             <img src="picture/GitHub.png" alt="Github_picture" id="github-logo">
             <a href="#" class="toggle"><figcaption>Github <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
               <div class="content hidden">
-                <p>Här är lite infotext som visas som dropdown</p>
+                <p>Throughout the entire course, we used GitHub as the main platform for accessing course materials and sharing code. This gave me strong skills in using GitHub for version control and collaboration. I have learned how GitHub provides a secure way to back up code online and makes it easy to manage different versions of a project efficiently.</p>
               </div>
           </figure>
         </div>
       </div>
 
       <div class="project-section" id="project-section">
-        <h1>Mina projekt</h1>
+        <h1>My projects</h1>
         <button class="carusell-arrow left" id="scrollLeft">&#10094;</button>
 
         <div class="project-container">
 
           <div class="projects-link">
             <a href="/Internets-historia/index.html"><img src="picture/printScreen-internetHistory.png" alt="Internets historia printscreen">
-            <figcaption>Internets historia</figcaption></a>
+            <figcaption>Internets history</figcaption></a>
 
             <div class="logo-used">
               <img src="/picture/html_logo.png" alt="HTML-logo">
@@ -138,7 +142,7 @@
           </div>
 
           <div class="projects-link">
-            <a href="https://www.figma.com/proto/AqIbssmRS99oocffwcSChH/431-511-Prototyp---Konditoriets-mobilanpassade-webbsida?node-id=44-91&starting-point-node-id=44%3A91&scaling=scale-down&content-scaling=responsive&t=K1fD9MdnDPIo2oYg-1" target="_blank"><img src="picture/printScreen-Figma.png" alt="Figma prototyp" title="Konditori Figma-prototyp">
+            <a href="https://www.figma.com/proto/AqIbssmRS99oocffwcSChH/431-511-Prototyp---Konditoriets-mobilanpassade-webbsida?node-id=44-91&starting-point-node-id=44%3A91&scaling=scale-down&content-scaling=responsive&t=K1fD9MdnDPIo2oYg-1" target="_blank"><img src="picture/printScreen_konditori.png" alt="Figma prototyp" title="Konditori Figma-prototyp">
             <figcaption>Figma skiss konditori</figcaption></a>
 
             <div class="logo-used">
@@ -171,23 +175,24 @@
             <figcaption>Memoryspel</figcaption></a>
 
             <div class="logo-used">
-              <img src="/picture/javascript_logo.png" alt="Javascript-logo">
+              <img src="/picture/javascript-fixad.webp" alt="Javascript-logo">
             </div>
           </div>
         </div>
         <button class="carusell-arrow right" id="scrollRight">&#10095;</button>
+        <div class="bottom-space"></div>
       </div>
 
 
       <div class="contactform-space">
 
         <form action="" method="POST" class="contact-form">
-          <h2>Kontakta mig här</h2>
-          <p>Har du några frågor eller funderingar eller bara vill nå ut till mig, skicka ett meddelande här</p>
+          <h2>Get in contact with me</h2>
+          <p>Dont hesitate to contact me if you have questions of any type or just want to get in touch with me. Lets connect!</p>
           <label for="email">Your mailadress:</label>
           <input type="email" name="email" required placeholder="Email..">
 
-          <label for="Message">Skriv ett meddelande här: </label>
+          <label for="Message">Write your message here: </label>
           <textarea type="text" name="message" required placeholder="Message.." id="form-message"></textarea>
           <button>Send</button>
         </form>
@@ -203,7 +208,7 @@
         <ul>
           <li><i class="fa-solid fa-phone"></i><a href="mailto:emiliaalmgren@hotmail.com" title="send me an email">emiliaalmgren@hotmail.com</a></li>
           <li><i class="fa-solid fa-envelope"></i><a href="tel:0707402324" title="call me">070 740 23 24</a></li>
-          <li><i class="fa-solid fa-map-location-dot"></i><a href="" title="location">Mejselvägen 46, 126 38 Hägersten</a></li>
+          <li><i class="fa-solid fa-map-location-dot"></i><a href="https://maps.app.goo.gl/pgYdMjpmfahmwi2EA" title="location" target="_blank">Mejselvägen 46, 126 38 Hägersten</a></li>
         </ul>
       </div>
 
@@ -220,7 +225,6 @@
 
     <hr>
     <div class="bottom-line">
-      <p>Cookies</p>
       <figure>
         <figcaption>My school</figcaption>
         <a href="https://www.tucsweden.se/for-foretag/lana-en-lia-praktikant/" target="_blank"><img src="picture/TUC-logotyp-yrkesho݈gskola.jpg" alt="Tuc-school" id="Tuc-logo"></a>
