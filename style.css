@@ -49,6 +49,10 @@ header {
   width: 100%;
 }
 
+video {
+  display: block;
+}
+
 .welcomeText {
   display: flex;
   flex-wrap: wrap;
@@ -102,8 +106,8 @@ header {
   background: rgb(124, 168, 143);
   border-radius: 20px;
   border: none;
-  width: 200px;
-  height: 50px;
+  width: 12.5rem;
+height: 3.125rem;
 }
 
 .download-link button:hover {
@@ -124,9 +128,6 @@ header {
 
 #moreAboutMe:hover {
   transition: transform 0.1s ease;
-}
-
-#moreAboutMe:hover {
   transform: scale(1.2);
 }
 
@@ -221,18 +222,6 @@ header {
   align-items: center;
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .welcome-text {
   font-size: large;
   background-color: rgba(255, 255, 255, 0.5);
@@ -304,8 +293,7 @@ header {
   text-align: center;
 }
 
-.content-boxes .figure_1 h2,
-.content-boxes .figure_2 h2 {
+.content-boxes figure h2 {
   position: absolute;
   color: rgb(23, 46, 193);
   z-index: 10;
