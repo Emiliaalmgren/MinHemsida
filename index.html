@@ -45,7 +45,7 @@
 
     <div class="about-me-section">
       <div class="welcome-text">
-        <h1 id="section-aboutme">Welcome to my portfolio</h1>
+        <h1 id="section-aboutme">A little something about me</h1>
         <p>An aspiring web developer located in Stockholm currently honing my skills and 
           learning everything there is to know about building great websites. My strengths lie in my 
           attention to detail, curiosity, and a good eye for design. I’m passionate about continuous
@@ -57,7 +57,7 @@
       
     </div>
 
-    <div class="first-page">
+    <div class="section-two">
 
       <div class="content-boxes">
 
@@ -93,7 +93,7 @@
 
           <figure>
             <img src="picture/cSharp_logo.png" alt="C#_programming" id="csharp-logo">
-            <a href="#" class="toggle"><figcaption>Programming C# <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
+            <a href="#" class="toggle"><figcaption>C# <span class="arrow fa-solid fa-chevron-down"></span></figcaption></a>
               <div class="content" class="hidden">
                 <p>I have completed both an introductory and an advanced course in C# over a period of four months. During this time, I developed a solid understanding of C# programming and its applications. As part of a group project, we expanded our previous golf club website and transformed it into a fully functional e-commerce platform, implementing key features such as user registration, product management, and checkout.</p>
               </div>
@@ -185,18 +185,21 @@
 
 
       <div class="contactform-space">
+        <form action="https://formspree.io/f/xyzwwknj" method="POST" class="contact-form">
+          <h2>Contact me</h2>
+          <p>Don't hesitate to reach out if you have questions or just want to connect. Let's talk!</p>
+          
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required placeholder="Name..">
 
-        <form action="" method="POST" class="contact-form">
-          <h2>Get in contact with me</h2>
-          <p>Dont hesitate to contact me if you have questions of any type or just want to get in touch with me. Lets connect!</p>
-          <label for="email">Your mailadress:</label>
-          <input type="email" name="email" required placeholder="Email..">
+            <label for="email">Your email address:</label>
+            <input type="email" id="email" name="email" required placeholder="Email..">
 
-          <label for="Message">Write your message here: </label>
-          <textarea type="text" name="message" required placeholder="Message.." id="form-message"></textarea>
-          <button>Send</button>
+            <label for="message">Write your message here:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Message.." oninput="autoResize(this)"></textarea>
+
+          <button type="submit">Send</button>
         </form>
-
       </div>
     </div>
   </main>
@@ -206,8 +209,8 @@
       <div class="kontakt">
         <h2>Kontakt</h2>
         <ul>
-          <li><i class="fa-solid fa-phone"></i><a href="mailto:emiliaalmgren@hotmail.com" title="send me an email">emiliaalmgren@hotmail.com</a></li>
-          <li><i class="fa-solid fa-envelope"></i><a href="tel:0707402324" title="call me">070 740 23 24</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:emiliaalmgren@hotmail.com" title="send me an email">emiliaalmgren@hotmail.com</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="tel:0707402324" title="call me">070 740 23 24</a></li>
           <li><i class="fa-solid fa-map-location-dot"></i><a href="https://maps.app.goo.gl/pgYdMjpmfahmwi2EA" title="location" target="_blank">Mejselvägen 46, 126 38 Hägersten</a></li>
         </ul>
       </div>

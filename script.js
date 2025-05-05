@@ -45,3 +45,9 @@ const navMeny = document.querySelector('.navMeny');
 menuToggle.addEventListener('click', () => {
   navMeny.classList.toggle('show');
 });
+
+// Autoresize textarea contactform
+function autoResize(textarea) {
+  textarea.style.height = 'auto'; // Nollställ först
+  textarea.style.height = textarea.scrollHeight + 'px'; // Sätt ny höjd efter innehåll
+}
