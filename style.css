@@ -51,6 +51,7 @@ header {
 
 video {
   display: block;
+  pointer-events: none;
 }
 
 .welcomeText {
