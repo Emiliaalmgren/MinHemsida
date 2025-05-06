@@ -153,12 +153,11 @@ height: 3.125rem;
   .navMeny {
     display: none;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 10%;
     right: 0;
-    width: 100%;
-    text-align: center;
+    width: auto;
   }
 
   .navMeny.show {
@@ -171,6 +170,15 @@ height: 3.125rem;
 
   .navMeny li {
     height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navMeny a {
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .navMeny li:hover {
@@ -234,17 +242,18 @@ height: 3.125rem;
 }
 
 .welcome-text p {
-  margin: 0 10% 10% 10%;
+  margin: 0 1rem;
   letter-spacing: 1px;
 }
 
 .welcome-text h1 {
-  padding: 5%;
+  padding: 1rem;
 }
 
 .profilePicture {
   border-radius: 40%;
   height: 50vw;
+  max-height: 500px;
   margin: 2rem;
 }
 
@@ -269,6 +278,11 @@ height: 3.125rem;
 @media (max-width: 500px) {
   .profilePicture {
     height: 60vw;
+  }
+
+  .welcome-text p {
+    margin: 0;
+    padding: 0;
   }
 }
 
